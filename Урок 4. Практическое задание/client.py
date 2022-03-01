@@ -85,15 +85,15 @@ class Client(metaclass=ClientVerifier):
         log.debug(f'Подготовлены данные для сообщения: {msg_dct}')
         # Сохраняет сообщения для истории
         with database_lock:
-            self.database.save_message(self.account_name , to_user, msg)
+            self.database.save_message(self.account_name, to_user, msg)
         # Необходимо дождаться освобождения сокета для отправки сообщения
-        with sock_lock:
-            try:
-                send_message(sock, msg_dct)
-                log.info(f'Отправлено сообщение -> {to_user}')
-            except:
-                log.critical('Потеряно соединение с сервером')
-                sys.exit(1)
+        # with sock_lock:
+        try:
+            send_message(sock, msg_dct)
+            log.info(f'Отправлено сообщение -> {to_user}')
+        except:
+            log.critical('Потеряно соединение с сервером')
+            sys.exit(1)
 
     def create_exit_msg(self):
         # Функция генерирует сообщение о выходе клиента
@@ -165,7 +165,7 @@ class Client(metaclass=ClientVerifier):
     def edit_contacts(self):
         ans = input('Для удаления введите del, для добавления add: ')
         if ans == 'del':
-            edit = input('Введите имя удаляемного контакта: ')
+            edit = input('Введите имя удаляемого контакта: ')
             with database_lock:
                 if self.database.check_contact(edit):
                     self.database.del_contact(edit)
