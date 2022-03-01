@@ -1,0 +1,66 @@
+2022-02-03 15:47:06,052        INFO                 server               Готовность к соединению
+2022-02-03 15:47:51,925        INFO                 server               Готовность к соединению
+2022-02-03 15:49:20,595        INFO                 server               Готовность к соединению
+2022-02-03 15:49:29,046        INFO                 server               Принято сообщение от ('127.0.0.1', 55270), декодировано: {'action': 'presence', 'time': 1643892569.0306745, 'user': {'account_name': 'Guest'}}
+2022-02-03 15:49:29,057        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 15:49:29,115        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643892569.0306745, 'user': {'account_name': 'Guest'}},), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 15:50:53,101        INFO                 server               Принято сообщение от ('127.0.0.1', 55313), декодировано: {'action': 'presence', 'time': 1643892653.0858831, 'user': {'account_name': 'Guest'}}
+2022-02-03 15:50:53,101        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 15:50:53,101        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643892653.0858831, 'user': {'account_name': 'Guest'}},), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 15:57:01,979        INFO                 server               Готовность к соединению
+2022-02-03 17:46:00,294        DEBUG                server               (LogDecCls) Вызвана функция: arg_parser. Параметры: (), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:00,294        INFO                 server               Готовность к соединению
+2022-02-03 17:46:00,326        INFO                 server               Установлено соедение с ('127.0.0.1', 58853)
+2022-02-03 17:46:00,328        INFO                 server               Установлено соедение с ('127.0.0.1', 58854)
+2022-02-03 17:46:00,328        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:46:00,343        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899560.3269303, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58853)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:00,388        INFO                 server               Установлено соедение с ('127.0.0.1', 58856)
+2022-02-03 17:46:00,388        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:46:00,395        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899560.3284404, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58854)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:00,395        INFO                 server               Установлено соедение с ('127.0.0.1', 58855)
+2022-02-03 17:46:00,396        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:46:00,396        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899560.388605, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=352, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58856)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:00,398        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:46:00,399        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899560.388605, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58855)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:00,402        INFO                 server               Установлено соедение с ('127.0.0.1', 58857)
+2022-02-03 17:46:00,915        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:46:00,915        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899560.4029405, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=476, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58857)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:46:54,115        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'message', 'time': 1643899614.0685492, 'account_name': 'Guest', 'mess_text': 'Привет, друзья'}, [('Guest', 'Привет, друзья')], <socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58854)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:47:21,495        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'message', 'time': 1643899641.370095, 'account_name': 'Guest', 'mess_text': 'И от меня привет'}, [('Guest', 'И от меня привет')], <socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58853)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:47:44,306        INFO                 server               Клиент ('127.0.0.1', 58856) отключился от сервера
+2022-02-03 17:47:44,811        INFO                 server               Клиент ('127.0.0.1', 58857) отключился от сервера
+2022-02-03 17:48:07,147        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'message', 'time': 1643899687.084679, 'account_name': 'Guest', 'mess_text': 'exit'}, [('Guest', 'exit')], <socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58854)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:44,585        DEBUG                server               (LogDecCls) Вызвана функция: arg_parser. Параметры: (), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:44,585        INFO                 server               Готовность к соединению
+2022-02-03 17:48:44,619        INFO                 server               Установлено соедение с ('127.0.0.1', 58939)
+2022-02-03 17:48:44,651        INFO                 server               Установлено соедение с ('127.0.0.1', 58940)
+2022-02-03 17:48:44,651        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:48:44,651        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899724.6192153, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58939)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:44,666        INFO                 server               Установлено соедение с ('127.0.0.1', 58941)
+2022-02-03 17:48:44,666        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:48:44,666        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899724.6512148, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58940)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:44,666        INFO                 server               Установлено соедение с ('127.0.0.1', 58942)
+2022-02-03 17:48:44,666        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:48:44,676        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899724.6668396, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58941)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:44,676        INFO                 server               Установлено соедение с ('127.0.0.1', 58943)
+2022-02-03 17:48:44,676        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:48:44,679        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899724.6668396, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58942)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
+2022-02-03 17:48:45,192        INFO                 server               Соединение с сервером клиента Guest. Успешно
+2022-02-03 17:48:45,192        DEBUG                server               (LogDecCls) Вызвана функция: client_message_validator. Параметры: ({'action': 'presence', 'time': 1643899724.67631, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58943)>), {} 
+                                                                         Модуль вызова: __main__. Вызов из функции: main_func(). Вызов из функции: main_func
