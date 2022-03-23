@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Globals package &#8212; документация Messenger Sirius v0.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Log_config package" href="log_config.html" />
+    <link rel="prev" title="Launcher module" href="launcher.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="globals-package">
+<h1>Globals package<a class="headerlink" href="#globals-package" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Пакет общих утилит, использующихся в разных модулях проекта.</p>
+<section id="module-globals.log_decors">
+<span id="log-decors-py"></span><h2>log_decors.py<a class="headerlink" href="#module-globals.log_decors" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.log_decors.LogDecCls">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.log_decors.</span></span><span class="sig-name descname"><span class="pre">LogDecCls</span></span><a class="headerlink" href="#globals.log_decors.LogDecCls" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Класс-декоратор.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="globals.log_decors.log_dec">
+<span class="sig-prename descclassname"><span class="pre">globals.log_decors.</span></span><span class="sig-name descname"><span class="pre">log_dec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func_to_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#globals.log_decors.log_dec" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Декоратор, выполняющий логирование вызовов функций. Сохраняет события
+типа debug, содержащие информацию о имени вызываемой функиции, параметры
+с которыми вызывается функция, и модуль, вызывающий функцию.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="globals.log_decors.login_required">
+<span class="sig-prename descclassname"><span class="pre">globals.log_decors.</span></span><span class="sig-name descname"><span class="pre">login_required</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#globals.log_decors.login_required" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Декоратор, проверяющий, что клиент авторизован на сервере.
+Проверяет, что передаваемый объект сокета находится в
+списке авторизованных клиентов.
+За исключением передачи словаря-запроса
+на авторизацию. Если клиент не авторизован,
+генерирует исключение TypeError</p>
+</dd></dl>
+
+</section>
+<section id="module-globals.descriptors_classes">
+<span id="descriptors-classes-py"></span><h2>descriptors_classes.py<a class="headerlink" href="#module-globals.descriptors_classes" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.descriptors_classes.AddressValidator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.descriptors_classes.</span></span><span class="sig-name descname"><span class="pre">AddressValidator</span></span><a class="headerlink" href="#globals.descriptors_classes.AddressValidator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дескриптор ip-адреса.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.descriptors_classes.PortValidator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.descriptors_classes.</span></span><span class="sig-name descname"><span class="pre">PortValidator</span></span><a class="headerlink" href="#globals.descriptors_classes.PortValidator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Дескриптор порта.</p>
+</dd></dl>
+
+</section>
+<section id="errors-py">
+<h2>errors.py<a class="headerlink" href="#errors-py" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.errors.ServerError">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.errors.</span></span><span class="sig-name descname"><span class="pre">ServerError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#globals.errors.ServerError" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Ошибка сервера</p>
+</dd></dl>
+
+</section>
+<section id="metaclasses-verifiers-py">
+<h2>metaclasses_verifiers.py<a class="headerlink" href="#metaclasses-verifiers-py" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.metaclasses_verifiers.ClientVerifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.metaclasses_verifiers.</span></span><span class="sig-name descname"><span class="pre">ClientVerifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clsname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bases</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clsdct</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#globals.metaclasses_verifiers.ClientVerifier" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метакласс, выполняющий базовую проверку классов клиентской программы.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="globals.metaclasses_verifiers.ServerVerifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">globals.metaclasses_verifiers.</span></span><span class="sig-name descname"><span class="pre">ServerVerifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clsname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bases</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clsdct</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#globals.metaclasses_verifiers.ServerVerifier" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Метакласс, выполняющий базовую проверку классов серверной программы.</p>
+</dd></dl>
+
+</section>
+<section id="utils-py">
+<h2>utils.py<a class="headerlink" href="#utils-py" title="Ссылка на этот заголовок">¶</a></h2>
+<p>globals.utils.get_message(client)</p>
+<ul class="simple">
+<li><p>Функция приёма сообщений от удалённых компьютеров. Принимает сообщения</p></li>
+</ul>
+<p>JSON, декодирует полученное сообщение и проверяет что получен словарь.</p>
+<p>globals.utils. <strong>send_message</strong> (sock, message)</p>
+<ul class="simple">
+<li><p>Функция отправки словарей через сокет. Кодирует словарь в формат JSON и</p></li>
+</ul>
+<p>отправляет через сокет.</p>
+</section>
+<section id="variables-py">
+<h2>variables.py<a class="headerlink" href="#variables-py" title="Ссылка на этот заголовок">¶</a></h2>
+<ul class="simple">
+<li><p>Содержит глобальные переменные проекта.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Messenger Sirius</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="server_main.html">Server programm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client_main.html">Client programm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="launcher.html">Launcher module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Globals package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-globals.log_decors">log_decors.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-globals.descriptors_classes">descriptors_classes.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#errors-py">errors.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metaclasses-verifiers-py">metaclasses_verifiers.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utils-py">utils.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-py">variables.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="log_config.html">Log_config package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="launcher.html" title="предыдущая глава">Launcher module</a></li>
+      <li>Next: <a href="log_config.html" title="следующая глава">Log_config package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Sergey Kosarev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/globals.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
